@@ -1104,6 +1104,25 @@ section,
   padding-bottom: clamp(28px, 5vh, 56px);
   background-color: #0a1628;
   color: #ffffff;
+  position: relative;
+}
+
+.hero.hero--steel.section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.05) 30%,
+    rgba(245, 247, 250, 0.15) 60%,
+    rgba(245, 247, 250, 0.3) 100%
+  );
+  pointer-events: none;
+  z-index: 3;
 }
 
 .hero.hero--steel::before {
